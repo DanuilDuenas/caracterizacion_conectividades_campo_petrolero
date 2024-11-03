@@ -88,7 +88,7 @@ with open('Data/coord_filt.pkl', 'rb') as file:
     df_filt = pickle.load(file)
 
 # Se generan las opciones para el selector de métricas
-path = "'Data/Distancias_DTW"
+path = "Data/Distancias_DTW"
 list_label = [{'label': 'Ninguno', 'value': '1'}]
 dicc_dist = {}
 for i, x in enumerate(os.listdir(path)):
