@@ -38,37 +38,37 @@ app.config.suppress_callback_exceptions = True
 with open('Data/stats_df_GR_filt.pkl', 'rb') as file:
     stats_df_GR_filt = pickle.load(file)
 
-with open('.\\Data\\stats_df_GR_allfm_filt.pkl', 'rb') as file:
+with open('Data/stats_df_GR_allfm_filt.pkl', 'rb') as file:
     stats_df_GR_allfm_filt = pickle.load(file)
 
-with open('.\\Data\\stats_df_DEN_filt.pkl', 'rb') as file:
+with open('Data/stats_df_DEN_filt.pkl', 'rb') as file:
     stats_df_DEN_filt = pickle.load(file)
 
-with open('.\\Data\\stats_df_NEUT_filt.pkl', 'rb') as file:
+with open('Data/stats_df_NEUT_filt.pkl', 'rb') as file:
     stats_df_NEUT_filt = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_GR_mean.pkl', 'rb') as file:
+with open('Data/Mapas/map_GR_mean.pkl', 'rb') as file:
     mapa_GR_mean = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_GR_median.pkl', 'rb') as file:
+with open('Data/Mapas/map_GR_median.pkl', 'rb') as file:
     mapa_GR_median = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_GR_allfms_mean.pkl', 'rb') as file:
+with open('Data/Mapas/map_GR_allfms_mean.pkl', 'rb') as file:
     mapa_GR_allfms_mean = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_GR_allfms_median.pkl', 'rb') as file:
+with open('Data/Mapas/map_GR_allfms_median.pkl', 'rb') as file:
     mapa_GR_allfms_median = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_DEN_mean.pkl', 'rb') as file:
+with open('Data/Mapas/map_DEN_mean.pkl', 'rb') as file:
     mapa_DEN_mean = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_DEN_median.pkl', 'rb') as file:
+with open('Data/Mapas/map_DEN_median.pkl', 'rb') as file:
     mapa_DEN_median = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_NEUT_mean.pkl', 'rb') as file:
+with open('Data/Mapas/map_NEUT_mean.pkl', 'rb') as file:
     mapa_NEUT_mean = pickle.load(file)
 
-with open('.\\Data\\Mapas\\map_NEUT_median.pkl', 'rb') as file:
+with open('Data/Mapas/map_NEUT_median.pkl', 'rb') as file:
     mapa_NEUT_median = pickle.load(file)
 
 datos_mapa = {'2':[stats_df_GR_filt, mapa_GR_mean, 'GR (mean)'],
@@ -84,11 +84,11 @@ datos_mapa = {'2':[stats_df_GR_filt, mapa_GR_mean, 'GR (mean)'],
 #####
 ### DISTANCIAS ###
 
-with open('.\\Data\\coord_filt.pkl', 'rb') as file:
+with open('Data/coord_filt.pkl', 'rb') as file:
     df_filt = pickle.load(file)
 
 # Se generan las opciones para el selector de métricas
-path = ".\\Data\\Distancias_DTW"
+path = "'Data/Distancias_DTW"
 list_label = [{'label': 'Ninguno', 'value': '1'}]
 dicc_dist = {}
 for i, x in enumerate(os.listdir(path)):
@@ -107,13 +107,13 @@ for i, x in enumerate(os.listdir(path)):
 
 ### RESULTADOS
 
-with open('.\\Data\\CRM\\casos_minimos.pkl', 'rb') as file:
+with open(''Data/CRM/casos_minimos.pkl', 'rb') as file:
     minimos = pickle.load(file)
 
-with open('.\\Data\\CRM\\resultados_corridas.pkl', 'rb') as file:
+with open('Data/CRM/resultados_corridas.pkl', 'rb') as file:
     resultados_caso = pickle.load(file)
 
-with open('.\\Data\\CRM\\conectividades_crm_por_caso_comb.pkl', 'rb') as file:
+with open('Data/CRM/conectividades_crm_por_caso_comb.pkl', 'rb') as file:
     conectividades_crm_por_caso = pickle.load(file)
 
 with open('posicion_label_casos.pkl', 'rb') as file:
