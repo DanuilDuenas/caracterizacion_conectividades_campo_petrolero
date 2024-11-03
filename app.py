@@ -35,7 +35,7 @@ app.config.suppress_callback_exceptions = True
 
 ### MAPAS ###
 
-with open('.\\Data\\stats_df_GR_filt.pkl', 'rb') as file:
+with open('Data/stats_df_GR_filt.pkl', 'rb') as file:
     stats_df_GR_filt = pickle.load(file)
 
 with open('.\\Data\\stats_df_GR_allfm_filt.pkl', 'rb') as file:
