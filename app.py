@@ -20,7 +20,7 @@ import dash_auth
 from users import USERNAME_PASSWORD_PAIRS
 
 app = dash.Dash(__name__, 
-                # meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
+                meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
 )
 server = app.server
 app.title = "Caracterización Conectividad - Campo A"
@@ -2655,5 +2655,5 @@ def map_patterns(n, met_sele, rango_escala, pozo_sele, caso_sele, filtro_nombres
 
 # Run the server
 if __name__ == "__main__":
-    app.run_server()
-    # app.run_server(debug=True)
+    # app.run_server()
+    app.run_server(debug=True)
