@@ -25,7 +25,7 @@ app = dash.Dash(__name__,
 server = app.server
 app.title = "Caracterización Conectividad - Campo A"
 
-# auth = dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
+auth = dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 
 server = app.server
 app.config.suppress_callback_exceptions = True
