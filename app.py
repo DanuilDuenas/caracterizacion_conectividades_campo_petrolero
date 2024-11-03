@@ -107,7 +107,7 @@ for i, x in enumerate(os.listdir(path)):
 
 ### RESULTADOS
 
-with open(''Data/CRM/casos_minimos.pkl', 'rb') as file:
+with open('Data/CRM/casos_minimos.pkl', 'rb') as file:
     minimos = pickle.load(file)
 
 with open('Data/CRM/resultados_corridas.pkl', 'rb') as file:
