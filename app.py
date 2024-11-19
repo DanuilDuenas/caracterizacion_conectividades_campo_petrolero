@@ -1567,7 +1567,7 @@ def generate_control_card():
                     id="metrica-select",
                     multi=False,
                     options = list_label,
-                    value='21',
+                    value='2',
                     ),
             html.Br(),
             # html.Div([
