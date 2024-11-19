@@ -2139,7 +2139,7 @@ app.layout = html.Div(
                     html.Hr(),
                     html.B("Acerca de", style={'width': '100%','textAlign': 'left',} ),
                     html.Hr(),
-                    html.Div(children="Desarrollado por Grupo 7:"),
+                    html.Div(children="Desarrollado por:"),
                     html.Div(children="Danuil Dueñas"),
                     html.Div(children="Nicolas Aldana"),
                     html.Div(children="Jose Salazar"),
